@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Use of public conservation land, Great walks, 2005–17',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }

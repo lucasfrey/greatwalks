@@ -6183,6 +6183,13 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-chartjs-2@^2.7.2:
+  version "2.7.2"
+  resolved "https://npm.heyday.net.nz/react-chartjs-2/-/react-chartjs-2-2.7.2.tgz#9a9499f2943126b6ef89e7c8b93193879feb2597"
+  dependencies:
+    lodash "^4.17.4"
+    prop-types "^15.5.8"
+
 react-deep-force-update@^2.1.1:
   version "2.1.1"
   resolved "https://npm.heyday.net.nz/react-deep-force-update/-/react-deep-force-update-2.1.1.tgz#8ea4263cd6455a050b37445b3f08fd839d86e909"
