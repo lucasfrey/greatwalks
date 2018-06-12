@@ -6,7 +6,7 @@ const IndexPage = () => (
   <div>
     <Graph />
     <br/>
-    <Link to="/page-2/">Contact me</Link>
+    <Link to="/contact/">Contact me</Link>
   </div>
 )
 

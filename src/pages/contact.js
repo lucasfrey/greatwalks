@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const SecondPage = () => (
   <div>
     <h1>Contact me</h1>
-    <form name="contact" method="POST" netlify>
+    <form action="/contact" name="contact" method="POST" netlify>
       <p>
         <label>Your Name: <input type="text" name="name" /></label>   
       </p>

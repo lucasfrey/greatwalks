@@ -32,11 +32,8 @@ class Graph extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>{this.state.selectedGreatWalks}</h1>
-				{this.state.selectedGreatWalks ? '' : <p>Select a Great Walk</p>}
 				{this.renderGreatWalkDropdown()}
 				<br /><br />
-				{this.state.selectedHut ? '' : <p>Select a Hut</p>}
 				{this.renderHutDropdown()}
 				<br /><br />
 				<h2>20{this.renderYearInput()}</h2>
@@ -48,7 +45,7 @@ class Graph extends React.Component {
 	renderGreatWalkDropdown() {
 		return (
 			<select value={this.state.selectedGreatWalks} onChange={this.onChange.bind(null, 'selectedGreatWalks')}>
-				<option value=""></option>
+				<option value="">Select a great walk</option>
 				{this.getGreatWalkOptions()}
 			</select>
 		)
@@ -57,7 +54,7 @@ class Graph extends React.Component {
 	renderHutDropdown() {
 		return (
 			<select value={this.state.selectedHut} onChange={this.onChange.bind(null, 'selectedHut')}>
-				<option value=""></option>
+				<option value="">Select a hut or campsite</option>
 				{this.getHutOptions()}
 			</select>
 		)
@@ -65,7 +62,7 @@ class Graph extends React.Component {
 
 	renderYearInput() {
 		return (
-			<select value={this.state.yearSelected} onChange={this.onChange.bind(null, 'yearSelected')}>
+			<select className="year" value={this.state.yearSelected} onChange={this.onChange.bind(null, 'yearSelected')}>
 				<option value="05">05</option>
 				<option value="06">06</option>
 				<option value="07">07</option>
@@ -137,7 +134,7 @@ class Graph extends React.Component {
 		let allHuts = this.state.huts;
 		let huts = allHuts[this.state.selectedGreatWalks];
 
-		return huts.map((hut, index) => {
+		return huts.map((hut) => {
 			return (
 				<option key={hut} value={hut}>{hut}</option>
 			);
