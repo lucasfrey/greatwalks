@@ -5,7 +5,8 @@ import Graph from '../components/graph/Graph'
 const IndexPage = () => (
   <div>
     <Graph />
-    <Link to="/page-2/">Go to page 2</Link>
+    <br/>
+    <Link to="/page-2/">Contact me</Link>
   </div>
 )
 
