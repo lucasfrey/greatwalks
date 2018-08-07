@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -10,10 +11,11 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Tool to read Use of public conservation land, Great walks, 2005–17' },
       ]}
-    />
+    >
+      <link rel="canonical" href="https://great-walks-nz.netlify.com/" />
+    </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
       style={{
@@ -25,6 +27,7 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
